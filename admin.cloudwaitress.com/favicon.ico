@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <title>
+    Admin Dashboard
+  </title>
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+  <link rel="stylesheet" href="/reset.css">
+  <link rel="stylesheet" href="/initial-content.css">
+
+  <script>
+    UPLOADCARE_PUBLIC_KEY = 'aa1c6cf0f70f24143127';
+  </script>
+  
+  <script src="https://global.localizecdn.com/localize.js"></script>
+  <script>!function(a){if(!a.Localize){a.Localize={};for(var e=["translate","untranslate","phrase","initialize","translatePage","setLanguage","getLanguage","getSourceLanguage","detectLanguage","getAvailableLanguages","untranslatePage","bootstrap","prefetch","on","off","hideWidget","showWidget"],t=0;t<e.length;t++)a.Localize[e[t]]=function(){}}}(window);</script>
+
+  <script>
+    Localize.initialize({
+      key: '7Oh6XePjWnViX',
+      rememberLanguage: true,
+      saveNewPhrases: false
+    });
+  </script>
+          
+<link href="/vendors.a5dda38de4db377a7f5e.css" rel="stylesheet"><link href="/main.d04a80388d1edaf219a4.css" rel="stylesheet"></head>
+
+<body>
+
+  <div id="initial-cover-loader" class="cover-loader active">
+    <div class="cover-loader-background"></div>
+    <div class="cover-loader-content">
+      <div class="rotate-loader"></div>
+      <h1 class="title">Loading...</h1>
+      <p class="message">This can take up to one minute the first time or if an update has been released</p>
+    </div>
+  </div>
+
+  <div id="root"></div>
+
+  <script>(function () { var w = window; var ic = w.Intercom; if (typeof ic === "function") { ic('reattach_activator'); ic('update', intercomSettings); } else { var d = document; var i = function () { i.c(arguments) }; i.q = []; i.c = function (args) { i.q.push(args) }; w.Intercom = i; function l() { var s = d.createElement('script'); s.type = 'text/javascript'; s.async = true; s.crossorigin = 'anonymous'; s.src = 'https://widget.intercom.io/widget/wa8n1bx1'; var x = d.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x); } if (w.attachEvent) { w.attachEvent('onload', l); } else { w.addEventListener('load', l, false); } } })()</script>
+  <script src="https://js.chargebee.com/v2/chargebee.js"></script>
+  <script lang="text/javascript" src="https://cdn.ably.io/lib/ably.min-1.js"></script>
+  <script id="stripe-js" src="https://js.stripe.com/v3/"></script>
+
+<script type="text/javascript" src="/runtime.55b68d5bc9bb4ddb751a.js"></script><script type="text/javascript" src="/vendors.44ff1b68abed1b43349b.js"></script><script type="text/javascript" src="/main.1ba16df26db5dfa1a025.js"></script></body>
+
+</html>

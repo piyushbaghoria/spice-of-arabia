@@ -1,0 +1,111 @@
+html,
+body {
+    color: #383838;
+}
+
+body,
+p,
+a,
+li,
+button {
+    font-family: Lato, Inter, Verdana, Helvetica, sans-serif;
+    position: relative;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: Lato, Inter, Verdana, Helvetica, sans-serif;
+}
+
+@-webkit-keyframes RotateLoaderAnimation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes RotateLoaderAnimation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.rotate-loader {
+    animation: RotateLoaderAnimation 0.6s infinite linear;
+    border: 1.1em solid gray;
+    border-left: 1.1em solid black;
+    border-radius: 50%;
+    font-size: 5px;
+    height: 10em;
+    margin: 0 auto;
+    position: relative;
+    text-indent: -9999em;
+    transform: translateZ(0);
+    width: 10em;
+}
+
+.rotate-loader:after {
+    border-radius: 50%;
+    height: 10em;
+    width: 10em;
+}
+
+.cover-loader {
+    z-index: 50;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    display: none;
+    opacity: 0;
+    transition: 0.3s all ease-in-out;
+}
+
+.cover-loader.active {
+    display: flex;
+    opacity: 1;
+}
+
+.cover-loader .rotate-loader {
+    margin-bottom: 20px;
+}
+
+.cover-loader .title {
+    font-size: 24px;
+    font-weight: 800;
+    margin-bottom: 12px;
+}
+
+.cover-loader .message {
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+.cover-loader .cover-loader-background {
+    z-index: 50;
+    background: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: 0.3s all ease-in-out;
+}
+
+.cover-loader .cover-loader-content {
+    z-index: 55;
+    text-align: center;
+    margin-bottom: 60px;
+}
